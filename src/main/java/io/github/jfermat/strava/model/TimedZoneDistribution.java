@@ -22,7 +22,7 @@ import java.util.List;
  * Stores the exclusive ranges representing zones and the time spent in each.
  */
 @Schema(description = "Stores the exclusive ranges representing zones and the time spent in each.")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2021-01-10T09:15:14.081+01:00[Europe/Paris]")
+
 public class TimedZoneDistribution extends ArrayList<TimedZoneRange> {
 
   @Override

@@ -2,6 +2,7 @@ package io.github.jfermat.strava.api;
 
 import io.github.jfermat.strava.invoker.ApiClient;
 
+import io.github.jfermat.strava.model.ActivityType;
 import io.github.jfermat.strava.model.Fault;
 import java.io.File;
 import io.github.jfermat.strava.model.Upload;
@@ -25,7 +26,7 @@ import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2021-01-10T09:15:14.081+01:00[Europe/Paris]")@Component("io.github.jfermat.strava.api.UploadsApi")
+@Component("io.github.jfermat.strava.api.UploadsApi")
 public class UploadsApi {
     private ApiClient apiClient;
 
@@ -61,7 +62,7 @@ public class UploadsApi {
      * @return Upload
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
-    public Upload createUpload(File file, String name, String description, String trainer, String commute, String dataType, String externalId) throws RestClientException {
+    public Upload createUpload(File file, ActivityType activityType, String name, String description, String trainer, String commute, String dataType, String externalId) throws RestClientException {
         Object postBody = null;
         String path = UriComponentsBuilder.fromPath("/uploads").build().toUriString();
         
@@ -70,6 +71,8 @@ public class UploadsApi {
         final MultiValueMap<String, Object> formParams = new LinkedMultiValueMap<String, Object>();
         if (file != null)
             formParams.add("file", new FileSystemResource(file));
+        if (activityType != null)
+            formParams.add("activity_type", activityType.getValue());
         if (name != null)
             formParams.add("name", name);
         if (description != null)

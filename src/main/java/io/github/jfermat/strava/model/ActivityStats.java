@@ -23,7 +23,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
  * A set of rolled-up statistics and totals for an athlete
  */
 @Schema(description = "A set of rolled-up statistics and totals for an athlete")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2021-01-10T09:15:14.081+01:00[Europe/Paris]")
+
 public class ActivityStats {
   @JsonProperty("biggest_ride_distance")
   private Double biggestRideDistance = null;

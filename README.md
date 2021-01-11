@@ -2,7 +2,6 @@
 
 Strava API v3
 - API version: 3.0.0
-  - Build date: 2021-01-10T09:15:14.081+01:00[Europe/Paris]
 
 The [Swagger Playground](https://developers.strava.com/playground) is the easiest way to familiarize yourself with the Strava API by submitting HTTP requests and observing the responses before you write any client code. It will show what a response will look like with different endpoints depending on the authorization scope you receive from your athletes. To use the Playground, go to https://www.strava.com/settings/api and change your “Authorization Callback Domain” to developers.strava.com. Please note, we only support Swagger 2.0. There is a known issue where you can only select one scope at a time. For more information, please check the section “client code” at https://developers.strava.com/docs.
 
@@ -32,7 +31,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>io.github.jfermat</groupId>
   <artifactId>strava-api-client-resttemplate</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -42,7 +41,7 @@ Add this dependency to your project's POM:
 Add this dependency to your project's build file:
 
 ```groovy
-compile "io.github.jfermat:strava-api-client-resttemplate:1.0.1"
+compile "io.github.jfermat:strava-api-client-resttemplate:1.0.2"
 ```
 
 ## Getting Started

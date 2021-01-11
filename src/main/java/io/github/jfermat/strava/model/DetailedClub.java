@@ -23,7 +23,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
  * DetailedClub
  */
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2021-01-10T09:15:14.081+01:00[Europe/Paris]")
+
 public class DetailedClub extends SummaryClub {
   /**
    * The membership status of the logged-in athlete.

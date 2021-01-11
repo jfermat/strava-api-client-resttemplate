@@ -22,7 +22,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
  * A roll-up of metrics pertaining to a set of activities. Values are in seconds and meters.
  */
 @Schema(description = "A roll-up of metrics pertaining to a set of activities. Values are in seconds and meters.")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2021-01-10T09:15:14.081+01:00[Europe/Paris]")
+
 public class ActivityTotal {
   @JsonProperty("count")
   private Integer count = null;

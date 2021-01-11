@@ -12,6 +12,7 @@
 
 package io.github.jfermat.strava.api;
 
+import io.github.jfermat.strava.model.ActivityType;
 import io.github.jfermat.strava.model.Fault;
 import java.io.File;
 import io.github.jfermat.strava.model.Upload;
@@ -42,13 +43,14 @@ public class UploadsApiTest {
     @Test
     public void createUploadTest() {
         File file = null;
+        ActivityType activityType = null;
         String name = null;
         String description = null;
         String trainer = null;
         String commute = null;
         String dataType = null;
         String externalId = null;
-        Upload response = api.createUpload(file, name, description, trainer, commute, dataType, externalId);
+        Upload response = api.createUpload(file, activityType, name, description, trainer, commute, dataType, externalId);
 
         // TODO: test validations
     }

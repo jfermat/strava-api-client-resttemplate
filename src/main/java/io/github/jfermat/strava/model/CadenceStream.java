@@ -25,7 +25,7 @@ import java.util.List;
  * CadenceStream
  */
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2021-01-10T09:15:14.081+01:00[Europe/Paris]")
+
 public class CadenceStream extends BaseStream {
   @JsonProperty("data")
   private List<Integer> data = null;

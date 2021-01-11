@@ -3,7 +3,7 @@ package io.github.jfermat.strava.invoker.auth;
 import org.springframework.http.HttpHeaders;
 import org.springframework.util.MultiValueMap;
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2021-01-10T09:15:14.081+01:00[Europe/Paris]")public class ApiKeyAuth implements Authentication {
+public class ApiKeyAuth implements Authentication {
     private final String location;
     private final String paramName;
 

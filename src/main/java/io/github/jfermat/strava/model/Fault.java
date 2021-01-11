@@ -25,7 +25,7 @@ import java.util.List;
  * Encapsulates the errors that may be returned from the API.
  */
 @Schema(description = "Encapsulates the errors that may be returned from the API.")
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2021-01-10T09:15:14.081+01:00[Europe/Paris]")
+
 public class Fault {
   @JsonProperty("errors")
   private List<Error> errors = null;

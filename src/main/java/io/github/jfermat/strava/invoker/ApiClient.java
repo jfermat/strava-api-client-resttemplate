@@ -55,7 +55,7 @@ import io.github.jfermat.strava.invoker.auth.HttpBasicAuth;
 import io.github.jfermat.strava.invoker.auth.ApiKeyAuth;
 import io.github.jfermat.strava.invoker.auth.OAuth;
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2021-01-10T09:15:14.081+01:00[Europe/Paris]")@Component("io.github.jfermat.strava.invoker.ApiClient")
+@Component("io.github.jfermat.strava.invoker.ApiClient")
 public class ApiClient {
     public enum CollectionFormat {
         CSV(","), TSV("\t"), SSV(" "), PIPES("|"), MULTI(null);

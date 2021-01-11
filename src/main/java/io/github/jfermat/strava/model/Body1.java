@@ -23,7 +23,7 @@ import org.threeten.bp.OffsetDateTime;
  * Body1
  */
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2021-01-10T09:15:14.081+01:00[Europe/Paris]")
+
 public class Body1 {
   @JsonProperty("name")
   private String name = null;
